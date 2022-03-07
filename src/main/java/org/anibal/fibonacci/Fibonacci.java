@@ -16,8 +16,7 @@ public class Fibonacci {
             result = 0;
         }
         else{ //error
-            System.out.println("Debes ingresar un tamaño mayor o igual a 1");
-            result = -1;
+            throw new RuntimeException("The value is negative: " + number);
         }
 
         return result;
