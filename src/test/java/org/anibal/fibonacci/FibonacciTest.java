@@ -28,9 +28,17 @@ class FibonacciTest {
     private void finish() {fibonacci = null;}
 
     @Test
-    public void testComputeReturnOneIfTheNumberIsZero(){
+    public void testComputeReturnZeroIfTheNumberIsZero(){
         int expectedValue = 0;
         int obtinedValue = fibonacci.compute(0);
+
+        assertEquals(expectedValue,obtinedValue);
+    }
+
+    @Test
+    public void testComputeReturnOneIfTheNumberIsOne(){
+        int expectedValue = 1;
+        int obtinedValue = fibonacci.compute(1);
 
         assertEquals(expectedValue,obtinedValue);
     }
