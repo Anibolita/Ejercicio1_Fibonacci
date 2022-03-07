@@ -43,5 +43,13 @@ class FibonacciTest {
         assertEquals(expectedValue,obtinedValue);
     }
 
+    @Test
+    public void testComputeReturnOneIfTheNumberIsTwo(){
+        int expectedValue = 1;
+        int obtinedValue = fibonacci.compute(2);
+
+        assertEquals(expectedValue,obtinedValue);
+    }
+
 
 }
